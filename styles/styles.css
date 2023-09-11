@@ -17,6 +17,7 @@
     letter-spacing: 0;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -42,6 +43,7 @@ h2 {
     margin: 0;
 }
 
+.h3,
 h3 {
     font-size: 1.5rem;
     margin: 0;
@@ -55,10 +57,12 @@ h4 {
     font-family: 'Poppins', sans-serif;
 }
 
+.p,
 p {
     font-family: 'Poppins', sans-serif;;
     color: var(--color-text-p);
     font-size: .9rem;
+    text-decoration: none;
 }
 
 .title-section {
