@@ -113,27 +113,31 @@
           <span class="h2 color-primary">projeto</span>
           <span class="h2 color-secundary">|</span>
         </h2>
-        <form action="" method="post" id="form">
+        <form id="form">
           <div class="box-input">
             <label for="name">Seu nome</label>
-            <input type="text" name="name" id="name">
+            <input type="text" id="js-name" required>
           </div>
 
           <div class="box-input">
             <label for="email">Seu email</label>
-            <input type="text" name="email" id="email">
+            <input type="text" id="js-email" required>
           </div>
 
           <div class="box-input">
             <label for="subject">Seu Assunto</label>
-            <input type="text" name="subject" id="subject">
+            <input type="text" id="js-subject" required>
           </div>
 
           <div class="box-input">
             <label for="message">Mensagem</label>
-            <textarea name="message" id="message" cols="30" rows="5"></textarea>
+            <textarea id="js-message" cols="30" rows="5" required></textarea>
           </div>
-          <button type="submit" class="button button-submit">Salvar</button>
+          <div class="bottom-submit">
+            <h3 class="display-none-imp" id="js-message-info-form">Enviado com sucesso!</h3>
+            <div class="loader display-none-imp" id="js-loader-form"></div>
+            <button type="submit" class="button" id="js-button-form">Salvar</button>
+          </div>
 
         </form>
       </section>
@@ -157,6 +161,9 @@
       <img class="bottom-wave" src="./images/images-background/ic-onda.svg" alt="" />
     </footer>
   </div>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <script type="text/javascript" src="./script/script.js"></script>
 </body>
 
 </html>

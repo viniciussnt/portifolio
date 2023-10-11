@@ -95,6 +95,7 @@ p {
   border-radius: 4px;
   font-weight: 600;
   position: relative;
+  border: none;
 }
 
 .button::after {
@@ -113,4 +114,25 @@ p {
 
 .button:hover::after {
   right: 5px;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--color-primary);
+  border-radius: 100%;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
