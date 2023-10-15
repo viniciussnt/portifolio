@@ -1,0 +1,84 @@
+@media only screen and (max-width: 923px) {
+    .container {
+        width: 95%;
+    }
+
+    .title-section::before {
+        width: 10px !important;
+        left: -15px !important;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header .logo {
+        text-align: center;
+    }
+
+    header a {
+        margin: 5px 0;
+    }
+
+    .banner,
+    .services .services-inside, 
+    .contact,
+    .footer {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .banner, 
+    .services .services-inside, 
+    .contact,
+    footer{
+        padding: 0;
+    }
+
+    .banner .right {
+        text-align: center;
+    }
+
+    .banner .right img {
+        width: 60%;
+        margin-top: 1rem;
+    }
+
+    .services .left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-section {
+        margin-top: 20px;
+    }
+
+    .contact .left #form {
+        width: 100%;
+    }
+
+    .services .services-inside .my-services {
+        grid-template-columns: 1fr;
+    }
+
+    .p,
+    p {
+        font-size: 1.5rem !important;
+    }
+
+    .h3,
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        grid-template-areas: 
+        "item-section-center item-section-center item-section-center"
+        "bottom-wave bottom-wave bottom-wave";
+    }
+
+    footer .left.item-section-left {
+        display: none;
+    }
+}
